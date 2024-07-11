@@ -17,18 +17,18 @@ function App() {
       <BrowserRouter>
         <ToastContainer />
         <Routes>
-          <Route path="/" element={<Signup></Signup>}></Route>
-          <Route path="/login" element={<Login></Login>}></Route>
-          <Route path="/home" element={<Sidebar></Sidebar>}></Route>
+          <Route path="/" element={<Signup> </Signup>}></Route>
+          <Route path="/login" element={<Login> </Login>}></Route>
+          <Route path="/home" element={<Sidebar> </Sidebar>}></Route>
           <Route
             path="/del"
-            element={<VideoComponent></VideoComponent>}
-          ></Route>
-          <Route path="/cart" exact Component={Cart} />
-          <Route path="/not-found" Component={Notfound} />
-          <Route path="*" element={<Navigate to="/not-found" />} />
-        </Routes>
-      </BrowserRouter>
+            element={<VideoComponent> </VideoComponent>}
+          ></Route>{" "}
+          <Route path="/cart" exact Component={Cart} />{" "}
+          <Route path="/not-found" Component={Notfound} />{" "}
+          <Route path="*" element={<Navigate to="/not-found" />} />{" "}
+        </Routes>{" "}
+      </BrowserRouter>{" "}
     </>
   );
 }
