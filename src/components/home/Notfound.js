@@ -6,7 +6,7 @@ function Notfound() {
     justifyContent: "center",
     alignItems: "center",
     height: "100vh", // Full viewport height
-    backgroundColor: "#f8f9fa", // Optional: background color
+    backgroundColor: "transparent", // Optional: background color
   };
 
   const notFoundStyle = {
