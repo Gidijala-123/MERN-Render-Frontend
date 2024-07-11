@@ -1,11 +1,30 @@
 import React from "react";
 
 function Notfound() {
+  const containerStyle = {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    height: "100vh", // Full viewport height
+    backgroundColor: "#f8f9fa", // Optional: background color
+  };
+
+  const notFoundStyle = {
+    textAlign: "center",
+  };
+
+  const imgStyle = {
+    maxWidth: "100%",
+    height: "auto",
+  };
+
   return (
-    <div className="not-found">
-      {/* <h2>404</h2>
-      <h3>Page Not found</h3> */}
-      <img src="./new/not-found.gif" alt="page-notfound"/>
+    <div style={containerStyle}>
+      <div style={notFoundStyle}>
+        {/* <h2>404</h2>
+        <h3>Page Not found</h3> */}
+        <img src="./new/not-found.gif" alt="page-notfound" style={imgStyle} />
+      </div>
     </div>
   );
 }
